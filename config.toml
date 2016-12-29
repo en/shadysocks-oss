@@ -1,0 +1,9 @@
+rnode = "127.0.0.1:1081"
+pnode = "127.0.0.1:8388"
+password = "aes_password"
+timeout = 300
+method = "aes-256-cfb"
+fast_open = false
+workers = 1
+prefer_ipv6 = false
+one_time_auth = false

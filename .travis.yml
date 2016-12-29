@@ -1,0 +1,17 @@
+language: go
+
+go:
+  - 1.7.4
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install nmap -y
+
+install:
+  - go get github.com/en/shadysocks/cmd/{rnode,pnode}
+
+before_script:
+  - sudo tests/socksify/install.sh
+
+script:
+  - tests/test.sh
